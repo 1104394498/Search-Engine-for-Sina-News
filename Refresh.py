@@ -220,7 +220,7 @@ def refresh():
     global maxPage
     global allPages, TermDict, stop_words, N, avg_l
     #停用词文档构建
-    buildStopWordFile()
+    #buildStopWordFile()
     
     #处理滚动页面
     allPages = []
@@ -241,4 +241,4 @@ def refresh():
     WriteInDataBase()
 
 if __name__ == '__main__':
-    refresh(2)
+    refresh()
